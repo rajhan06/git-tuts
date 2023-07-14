@@ -1,0 +1,544 @@
+# aws-devops-zero-to-hero
+
+AWS zero to hero repo for devops engineers to learn AWS in 30 Days. This repo includes projects, presentations, interview questions and real time examples. Each day's class will provide real-time knowledge on AWS services, allowing you to apply what you've learned and gain practical skills in working with AWS in a DevOps context.
+
+## Day 1: Introduction to AWS
+
+You will learn what is private and public cloud. Why companies are moving to public cloud, what are the advantages of moving to cloud.
+
+Also, you will be introduced to the basics of AWS, including the core services and their significance in DevOps practices. Finally learn how to set up an AWS account and navigate the AWS Management Console.
+
+## Day 2: IAM (Identity and Access Management)
+
+You will explore IAM, which is used for managing access to AWS resources. You'll learn how to create IAM users, groups, and roles, and how to apply permissions and security best practices to ensure proper access control.
+
+## Day 3: EC2 Instances
+
+You'll dive into EC2, which provides virtual servers in the cloud. You'll learn how to launch EC2 instances, connect to them using SSH, and understand key concepts such as instance types, security groups, and key pairs.
+
+**Your First AWS Project**: Deploy a simple web application(such as jenkins) on the ec2 instance and access the application from outside AWS.
+
+## Day 4: AWS Networking (VPC)
+
+You'll explore AWS networking concepts, with a specific focus on VPC (Virtual Private Cloud). You'll learn how to create and configure VPCs, subnets, and route tables, enabling you to design and manage the network infrastructure for your applications.
+
+## Day 5: AWS Security
+
+This day emphasizes security best practices in AWS. You'll learn how to implement security measures such as security groups, network ACLs (Access Control Lists), and IAM policies to ensure the confidentiality, integrity, and availability of your AWS resources.
+
+## Day 6: AWS Route 53
+
+**Project:** Configure and manage a domain name using Route 53. You'll register a domain, set up DNS records, and explore advanced features such as health checks, routing policies, and DNS-based failover.
+
+## Day 7: Secure VPC Setup with EC2 Instances
+
+**Project:**
+
+- Design and configure a VPC:
+    Create a VPC with custom IP ranges.
+    Set up public and private subnets.
+    Configure route tables and associate subnets.
+
+- Implement network security:
+    Set up network access control lists (ACLs) to control inbound and outbound traffic.
+    Configure security groups for EC2 instances to allow specific ports and protocols.
+
+- Provision EC2 instances:
+    Launch EC2 instances in both the public and private subnets.
+    Configure security groups for the instances to allow necessary traffic.
+    Create and assign IAM roles to the instances with appropriate permissions.
+
+- Networking and routing:
+    Set up an internet gateway to allow internet access for instances in the public subnet.
+    Configure NAT gateway or NAT instance to enable outbound internet access for instances in the private subnet.
+    Create appropriate route tables and associate them with the subnets.
+
+- SSH key pair and access control:
+    Generate an SSH key pair and securely store the private key.
+    Configure the instances to allow SSH access only with the generated key pair.
+    Implement IAM policies and roles to control access and permissions to AWS resources.
+
+- Test and validate the setup:
+    SSH into the EC2 instances using the private key and verify connectivity.
+    Test network connectivity between instances in different subnets.
+    Validate security group rules and network ACL settings.
+
+By implementing this project, you'll gain hands-on experience in setting up a secure VPC with EC2 instances, implementing networking and routing, configuring security groups and IAM roles, and ensuring proper access control. This project will provide a practical understanding of how these AWS services work together to create a secure and scalable infrastructure for your applications.
+
+## Day 8: AWS Interview Questions on EC2, IAM and VPC
+
+## Day 9: Amazon S3
+
+This day focuses on Amazon S3, a scalable object storage service. You'll learn how to create S3 buckets, upload and download objects, and organize data using S3 features like versioning, lifecycle policies, and access control.
+
+## Day 10: AWS CLI
+
+## Day 11: AWS CloudFormation
+
+This day introduces Infrastructure as Code (IaC) using AWS CloudFormation. You'll learn how to create CloudFormation templates to automate the provisioning of resources, manage stacks, and ensure consistent infrastructure across deployments.
+
+**Project:** You'll work on creating a CloudFormation template that provisions a fully configured application stack, including EC2 instances, networking components, and security groups.
+
+## Day 12: AWS CodeCommit
+
+This day focuses on AWS CodeCommit, a managed source control service. You'll learn how to set up a Git repository in CodeCommit, collaborate with team members, and manage version control of your codebase.
+
+**Project:** You'll configure a CodeCommit repository for a team project, including setting up access control and collaboration workflows.
+
+## Day 13: AWS CodePipeline
+
+You'll dive into AWS CodePipeline, a fully managed continuous delivery service. You'll learn how to build end-to-end CI/CD pipelines by configuring source, build, and deployment stages, automating the entire software release process.
+
+**Project:** You'll create a CI/CD pipeline using CodePipeline for an application deployment, including source code integration, build, and automatic deployment to a target environment.
+
+## Day 14: AWS CodeBuild
+
+This day focuses on AWS CodeBuild, a fully managed build service. You'll learn how to configure build projects in CodeBuild, define build specifications, and perform build and testing processes.
+
+**Project:** You'll configure and run CodeBuild for a project, including defining build specifications and integrating with other AWS services.
+
+## Day 15: AWS CodeDeploy
+
+You'll explore AWS CodeDeploy, a service for automating application deployments to various compute environments. You'll learn how to create deployment groups, configure deployment strategies, and perform automatic rollbacks if necessary.
+
+**Project:** You'll implement a Blue/Green deployment strategy for a sample application using CodeDeploy, ensuring zero-downtime deployments and easy rollback options.
+
+## Day 16: AWS CloudWatch
+
+This day focuses on monitoring AWS resources using AWS CloudWatch. You'll learn how to create alarms, set up notifications, and collect metrics to gain insights into the health and performance of your applications and infrastructure.
+
+**Project:** You'll set up CloudWatch alarms for critical metrics of an application, define appropriate threshold conditions, and configure notification actions.
+
+## Day 17: AWS Lambda
+
+This day introduces serverless computing with AWS Lambda. You'll learn how to create and deploy serverless functions, trigger them based on events, and leverage Lambda to build scalable and event-driven architectures.
+
+## Day 18: AWS CloudWatch Events and EventBridge
+
+This day focuses on AWS CloudWatch Events and EventBridge, services for event-driven architectures. You'll learn how to create event rules, configure event targets, and build serverless event-driven workflows.
+
+**Project:** You'll build a serverless event-driven workflow using CloudWatch Events and EventBridge, demonstrating the integration and automation of different AWS services based on events.
+
+## Day 19: AWS CloudTrail and Config
+
+You'll explore AWS CloudTrail and AWS Config, which provide auditing and compliance capabilities. You'll learn how to track API calls using CloudTrail and ensure compliance with AWS Config rules.
+
+**Project:** You'll configure CloudTrail to log API activities and set up AWS Config rules to enforce compliance policies for your AWS resources.
+
+## Day 20: AWS DynamoDB
+
+You'll explore AWS DynamoDB, a NoSQL database service. You'll learn how to create and manage DynamoDB tables, perform CRUD operations, and leverage DynamoDB's scalability and performance capabilities.
+
+**Project:** You'll build a serverless API using DynamoDB as the backend storage, allowing data retrieval and modification operations.
+
+## Day 21: AWS ECS (Elastic Container Service)
+
+This day focuses on AWS ECS, a fully managed container orchestration service. You'll learn how to run and manage containers using ECS, including creating task definitions, managing services, and scaling with auto-scaling capabilities.
+
+**Project:** You'll deploy a multi-container application using ECS, configure auto-scaling policies, and ensure high availability and efficient resource utilization.
+
+## Day 22: AWS ECR (Elastic Container Registry)
+
+You'll explore AWS ECR, a fully managed container registry for storing and managing container images. You'll learn how to push and pull Docker images to and from ECR, enabling seamless integration with ECS and other container services.
+
+**Project:** You'll build a CI/CD pipeline that automatically builds, pushes, and deploys Docker images to ECR, ensuring streamlined container image management.
+
+## Day 23: AWS EKS (Elastic Kubernetes Service)
+
+This day introduces AWS EKS, a fully managed Kubernetes service. You'll learn how to deploy and manage Kubernetes clusters using EKS, including launching worker nodes, configuring networking, and deploying applications using Kubernetes manifests.
+
+**Project:** You'll deploy a sample application on EKS using Kubernetes manifests, demonstrating the capabilities of running containerized applications on a managed Kubernetes service.
+
+## Day 24: AWS CloudWatch Logs
+
+You'll explore AWS CloudWatch Logs, a service for collecting and analyzing log data. You'll learn how to configure log groups, streams, and filters to centralize log management and gain insights into application behavior and troubleshooting.
+
+**Project:** You'll set up CloudWatch Logs for a production application, configure log groups and streams, and create filters to extract relevant log data.
+
+## Day 25: AWS Secrets Manager
+
+This day focuses on AWS Secrets Manager, a service for storing and managing secrets such as database credentials, API keys, and other sensitive information. You'll learn how to store, retrieve, and rotate secrets securely in your applications.
+
+**Project:** You'll configure Secrets Manager to store and manage secrets, integrate secret retrieval in an application, and implement secret rotation policies.
+
+## Day 26: AWS Auto Scaling
+
+You'll dive into AWS Auto Scaling, a service for automatically adjusting the capacity of your AWS resources based on demand. You'll learn how to configure Auto Scaling groups, scaling policies, and scaling based on metrics.
+
+**Project:** You'll configure an Auto Scaling group for an application, define scaling policies based on metrics such as CPU utilization, and observe the dynamic scaling behavior.
+
+## Day 27: AWS RDS (Relational Database Service)
+
+This day introduces AWS RDS, a managed database service for relational databases. You'll learn how to create and manage RDS instances, configure backups, snapshots, and replication to ensure high availability and data durability.
+
+**Project:** You'll provision an RDS instance, configure backups and snapshots, and test replication scenarios for a sample database.
+
+## Day 28: AWS Elastic Load Balancer
+
+You'll explore AWS Elastic Load Balancer, a service for distributing incoming application traffic across multiple targets. You'll learn how to configure and manage load balancers to ensure high availability, fault tolerance, and scalability.
+
+**Project:** You'll configure an Elastic Load Balancer for an application, define target groups, and observe the load balancing behavior across instances.
+
+## Day 29: AWS Systems Manager
+
+You'll explore AWS Systems Manager, a management service for AWS resources. You'll learn how to use Systems Manager to manage EC2 instances, perform patch management, automate administrative tasks, and configure resource compliance.
+
+**Project:** You'll leverage Systems Manager to manage EC2 instances, perform common administrative tasks, and ensure compliance with configuration policies.
+
+## Day 30: AWS Cloud Migration Strategies and Tools
+
+This day focuses on learning how to migrate applications to AWS cloud. What are the most popular strategies and tools used to achieve the cloud migration.
+
+## Day 31: AWS Best Practices and Job Preparation
+
+On the final day, you'll review best practices for AWS services, including security, cost optimization and performance.
+
+
+AWS : amazon web servicess..
+
+Aws ==>> master / visa debitcard ==>> A/c ==>> 2 /- charge ==>> refund ==>> 750 h ==>>> 1 years validity..
+
+cloud computing: < 1 minit -->> 1 >> 2 yers >> bill pay -->> pay as you go..
+
+30 % and 70 %
+
+services / resources --->>> online -->>ondemand >> internet
+
+services / resources --->> servers, databse, backup, network, storage..
+
+cloud service models :
+
+IAAS: infrastructure as a service (ADMins) -->> INFRA ( servers, storage, db, bacup ..)
+
+PAAS: platform as a service ( developers) >> java, .net, python
+
+SAAS: Software as a service ( end users) >> money >> pay >> application use...
+
+AWS, AZURE, GCP, OC, RC, SC, IC..Ac..
+
+onpremise infrastructure
+
+DC ===>> data center: group of servers -->>place
+
+switches, cabing, h/w, serves.., hubs. router m MP, AC, PS, 0.5, storage, network, backup...etc.
+
+oracle ==>> APP ===>>>> EU.
+
+*****Introduction to AWS Cerification******
+
+1.IAAS: infrastructure as a service (ADMins) -->> INFRA ( servers, storage, db, bacup ..)
+
+2.PAAS: platform as a service ( developers) >> java, .net, python
+
+SAAS: Software as a service ( end users) >> money >> pay >> application use...
+
+Other Cloud servicess. 
+
+AWS, AZURE, GCP, OC, RC, SC, IC..Ac..
+
+Free acount creation.
+root
+
+
+Regions?--->
+
+
+===IAM===
+
+IAM:
+
+AWS IAM (Identity and Access Management) is a service provided by Amazon Web Services (AWS) that helps you manage access to your AWS resources. It's like a security system for your AWS account.
+
+IAM allows you to create and manage users, groups, and roles. Users represent individual people or entities who need access to your AWS resources. Groups are collections of users with similar access requirements, making it easier to manage permissions. Roles are used to grant temporary access to external entities or services.
+
+With IAM, you can control and define permissions through policies. Policies are written in JSON format and specify what actions are allowed or denied on specific AWS resources. These policies can be attached to IAM entities (users, groups, or roles) to grant or restrict access to AWS services and resources.
+
+IAM follows the principle of least privilege, meaning users and entities are given only the necessary permissions required for their tasks, minimizing potential security risks. IAM also provides features like multi-factor authentication (MFA) for added security and an audit trail to track user activity and changes to permissions.
+
+By using AWS IAM, you can effectively manage and secure access to your AWS resources, ensuring that only authorized individuals have appropriate permissions and actions are logged for accountability and compliance purposes.
+
+Overall, IAM is an essential component of AWS security, providing granular control over access to your AWS account and resources, reducing the risk of unauthorized access and helping maintain a secure environment.
+
+Components of IAM:
+
+Users: IAM users represent individual people or entities (such as applications or services) that interact with your AWS resources. Each user has a unique name and security credentials (password or access keys) used for authentication and access control.
+
+Groups: IAM groups are collections of users with similar access requirements. Instead of managing permissions for each user individually, you can assign permissions to groups, making it easier to manage access control. Users can be added or removed from groups as needed.
+
+Roles: IAM roles are used to grant temporary access to AWS resources. Roles are typically used by applications or services that need to access AWS resources on behalf of users or other services. Roles have associated policies that define the permissions and actions allowed for the role.
+
+Policies: IAM policies are JSON documents that define permissions. Policies specify the actions that can be performed on AWS resources and the resources to which the actions apply. Policies can be attached to users, groups, or roles to control access. IAM provides both AWS managed policies (predefined policies maintained by AWS) and customer managed policies (policies created and managed by you).
+
+
+==EC2===
+
+What is EC2, and why is it important?
+
+- Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud.
+- Access reliable, scalable infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
+- Provide secure compute for your applications. Security is built into the foundation of Amazon EC2 with the AWS Nitro System.
+- Optimize performance and cost with flexible options like AWS Graviton-based instances, Amazon EC2 Spot instances, and AWS Savings Plans.
+
+EC2 usecases
+
+Deliver secure, reliable, high-performance, and cost-effective compute infrastructure to meet demanding business needs.
+
+Access the on-demand infrastructure and capacity you need to run HPC applications faster and cost-effectively.
+Access environments in minutes, dynamically scale capacity as needed, and benefit from AWS’s pay-as-you-go pricing.
+
+Deliver the broadest choice of compute, networking (up to 400 Gbps), and storage services purpose-built to optimize price performance for ML projects
+
+EC2 Instance Types
+
+General purpose:
+General Purpose instances are designed to deliver a balance of compute, memory, and network resources. They are suitable for a wide range of applications, including web servers,
+small databases, development and test environments, and more.
+
+Compute optimized:
+
+Compute Optimized instances provide a higher ratio of compute power to memory. They excel in workloads that require high-performance processing such as batch processing, 
+scientific modeling, gaming servers, and high-performance web servers.
+
+Memory optimized:
+
+Memory Optimized instances are designed to handle memory-intensive workloads. They are suitable for applications that require large amounts of memory, such as in-memory databases,
+real-time big data analytics, and high-performance computing.
+
+Storage optimized:
+
+Storage Optimized instances are optimized for applications that require high, sequential read and write access to large datasets. 
+They are ideal for tasks like data warehousing, log processing, and distributed file systems.
+
+Accelerated computing:
+
+Accelerated Computing Instances typically come with one or more types of accelerators, such as Graphics Processing Units (GPUs),
+Field Programmable Gate Arrays (FPGAs), or custom Application Specific Integrated Circuits (ASICs). 
+These accelerators offload computationally intensive tasks from the main CPU, enabling faster and more efficient processing for specific workloads.
+
+Instance families
+
+    C – Compute
+
+    D – Dense storage
+
+    F – FPGA
+
+    G – GPU
+
+    Hpc – High performance computing
+
+    I – I/O
+
+    Inf – AWS Inferentia
+
+    M – Most scenarios
+
+    P – GPU
+
+    R – Random access memory
+
+    T – Turbo
+
+    Trn – AWS Tranium
+
+    U – Ultra-high memory
+
+    VT – Video transcoding
+
+    X – Extra-large memory
+
+Additional capabilities
+
+    a – AMD processors
+
+    g – AWS Graviton processors
+
+    i – Intel processors
+
+    d – Instance store volumes
+
+    n – Network and EBS optimized
+
+    e – Extra storage or memory
+
+    z – High performance
+
+EC2 Instance Basics:
+
+Understanding the concept of virtual servers and instances. Key components of an EC2 instance: AMI (Amazon Machine Image), instance types, and instance states. Differentiating between On-Demand, Reserved, and Spot instances.
+
+Launching an EC2 Instance:
+
+1.Step-by-step guide on launching an EC2 instance using the AWS Management Console.
+2.Configuring instance details, such as instance type, network settings, and storage options.
+3.Understanding security groups and key pairs for securing instances.
+
+Managing EC2 Instances:
+
+Starting, stopping, and terminating instances.
+Monitoring instance performance and utilization.
+Basic troubleshooting and accessing instances using SSH (Secure Shell).
+
+====VPC====
+
+VPC:
+Imagine you want to set up a private, secure, and isolated area in the cloud where you can run your applications and store your data. This is where a VPC comes into play.
+
+A VPC is a virtual network that you create in the cloud. It allows you to have your own private section of the internet, just like having your own network within a larger network. Within this VPC, you can create and manage various resources, such as servers, databases, and storage.
+
+Think of it as having your own little "internet" within the bigger internet. This virtual network is completely isolated from other users' networks, so your data and applications are secure and protected.
+
+Just like a physical network, a VPC has its own set of rules and configurations. You can define the IP address range for your VPC and create smaller subnetworks within it called subnets. These subnets help you organize your resources and control how they communicate with each other.
+
+To connect your VPC to the internet or other networks, you can set up gateways or routers. These act as entry and exit points for traffic going in and out of your VPC. You can control the flow of traffic and set up security measures to protect your resources from unauthorized access.
+
+With a VPC, you have control over your network environment. You can define access rules, set up firewalls, and configure security groups to regulate who can access your resources and how they can communicate.
+
+image.
+https://user-images.githubusercontent.com/43399466/247909766-12cc10b6-724c-42c9-b07b-d8a7ce124e24.png
+
+By default, when you create an AWS account, AWS will create a default VPC for you but this default VPC is just to get started with AWS. You should create VPCs for applications or projects.
+
+====VPC components:=======
+
+The following features help you configure a VPC to provide the connectivity that your applications need:
+
+Virtual private clouds (VPC):
+
+A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center. After you create a VPC, you can add subnets.
+
+Subnets:
+
+A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC.
+
+IP addressing:
+
+You can assign IP addresses, both IPv4 and IPv6, to your VPCs and subnets. You can also bring your public IPv4 and IPv6 GUA addresses to AWS and allocate them to resources in your VPC, such as EC2 instances, NAT gateways, and Network Load Balancers.
+
+Network Access Control List (NACL):
+
+A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
+
+Security Group:
+
+A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
+
+Routing:
+
+Use route tables to determine where network traffic from your subnet or gateway is directed.
+
+Gateways and endpoints:
+
+A gateway connects your VPC to another network. For example, use an internet gateway to connect your VPC to the internet. Use a VPC endpoint to connect to AWS services privately, without the use of an internet gateway or NAT device.
+
+Peering connections:
+
+Use a VPC peering connection to route traffic between the resources in two VPCs.
+
+Traffic Mirroring:
+
+Copy network traffic from network interfaces and send it to security and monitoring appliances for deep packet inspection.
+
+Transit gateways:
+
+Use a transit gateway, which acts as a central hub, to route traffic between your VPCs, VPN connections, and AWS Direct Connect connections.
+
+VPC Flow Logs:
+
+A flow log captures information about the IP traffic going to and from network interfaces in your VPC.
+
+VPN connections:
+
+Connect your VPCs to your on-premises networks using AWS Virtual Private Network (AWS VPN).
+
+image
+https://user-images.githubusercontent.com/43399466/248278052-89d8316e-7b70-4821-a6bf-67d1dcc4d2fb.png
+
+
+Create VPC workflow
+
+Success
+Details
+ Create VPC: vpc-0ebadf8293e21e5e0  
+ Enable DNS hostnames
+ Enable DNS resolution
+ Verifying VPC creation: vpc-0ebadf8293e21e5e0  
+ Create S3 endpoint: vpce-020237ab47ed7f97b  
+ Create subnet: subnet-0591f77ce518c8a99  
+ Create subnet: subnet-0ed3bc34a17e7a191  
+ Create subnet: subnet-053bed455197bfb87  
+ Create subnet: subnet-0f15ff8f83ba21a7f  
+ Create internet gateway: igw-0600dec4d84f23890  
+ Attach internet gateway to the VPC
+ Create route table: rtb-0838c869a20df60d6  
+ Create route
+ Associate route table
+ Associate route table
+ Create route table: rtb-04570399974b6faca  
+ Associate route table
+ Create route table: rtb-01d19ee48d8b3c056  
+ Associate route table
+ Verifying route table creation
+ Associate S3 endpoint with private subnet route tables: vpce-020237ab47ed7f97b  
+
+
+Create VPC workflow with NAT Gateways
+
+69%
+[object Object]: 69.23076923076923%[object Object]: 69.23076923076923%
+Details
+ Create VPC: vpc-0bc9ecf41d3ff70c6  
+ Enable DNS hostnames
+ Enable DNS resolution
+ Verifying VPC creation: vpc-0bc9ecf41d3ff70c6  
+ Create subnet: subnet-080e5b5a2828abeb1  
+ Create subnet: subnet-0811594e6e1143e2d  
+ Create subnet: subnet-096e0d8a72c3c3f48  
+ Create subnet: subnet-0136f4d691d70198d  
+ Create internet gateway: igw-0e69835b3d0ba159f  
+ Attach internet gateway to the VPC
+ Create route table: rtb-037f4813b21fa4d10  
+ Create route
+ Associate route table
+ Associate route table
+ Allocate elastic IP: eipalloc-09db18d7ce3280fda  
+ Allocate elastic IP: eipalloc-070133eb7efb6b9bb  
+ Create NAT gateway: nat-028f3fb935e3e9bda  
+ Create NAT gateway: nat-048e5db76e8e3ece3  
+ Wait for NAT Gateways to activate
+ Create route table
+ Create route
+ Associate route table
+ Create route table
+ Create route
+ Associate route table
+ Verifying route table creation
+
+
+
+======>AWS Security using Security Groups and NACL
+
+AWS (Amazon Web Services) provides multiple layers of security to protect resources and data within its cloud infrastructure. Two important components for network security in AWS are Security Groups and Network Access Control Lists (NACLs). Let's explore how each of them works:
+
+Security Groups:
+
+    Security Groups act as virtual firewalls for Amazon EC2 instances (virtual servers) at the instance level. They control inbound and outbound traffic by allowing or denying specific protocols, ports, and IP addresses.
+    Each EC2 instance can be associated with one or more security groups, and each security group consists of inbound and outbound rules.
+    Inbound rules determine the traffic that is allowed to reach the EC2 instance, whereas outbound rules control the traffic leaving the instance.
+    Security Groups can be configured using IP addresses, CIDR blocks, security group IDs, or DNS names to specify the source or destination of the traffic.
+    They operate at the instance level and evaluate the rules before allowing traffic to reach the instance.
+    Security Groups are stateful, meaning that if an inbound rule allows traffic, the corresponding outbound traffic is automatically allowed, and vice versa.
+    Changes made to security group rules take effect immediately.
+
+Network Access Control Lists (NACLs):
+
+    NACLs are an additional layer of security that operates at the subnet level. They act as stateless traffic filters for inbound and outbound traffic at the subnet boundary.
+    Unlike Security Groups, NACLs are associated with subnets, and each subnet can have only one NACL. However, multiple subnets can share the same NACL.
+    NACLs consist of a numbered list of rules (numbered in ascending order) that are evaluated in order from lowest to highest.
+    Each rule in the NACL includes a rule number, protocol, rule action (allow or deny), source or destination IP address range, port range, and ICMP (Internet Control Message Protocol) type.
+    NACL rules can be configured to allow or deny specific types of traffic based on the defined criteria.
+    They are stateless, which means that if an inbound rule allows traffic, the corresponding outbound traffic must be explicitly allowed using a separate outbound rule.
+    Changes made to NACL rules may take some time to propagate to all the resources using the associated subnet.
+
+image.
+https://user-images.githubusercontent.com/43399466/249581348-30bbc9e8-6502-438b-8adf-ece8b81edce9.png

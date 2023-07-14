@@ -238,14 +238,7 @@ AWS, AZURE, GCP, OC, RC, SC, IC..Ac..
 
 Free acount creation.
 root
-Logins 	rajhan.143
-Pass	Sumathiraj@123
 
-Admin
-rajesh_admin	Rajesh_admin1
-
-Devops
-rajendra_devops	Rajendra_devops1
 
 Regions?--->
 
